@@ -24,7 +24,7 @@ public class WeaponryConfigs
 
         public static void init(File file) {
             if (config == null) {
-                config = new Configuration(new File(file.getParentFile().getAbsolutePath() + "\\armory\\Addons\\weaponry.cfg"), true);
+                config = new Configuration(new File(file.getParentFile(), "armory/Addons/weaponry.cfg"), true);
                 loadWeaponryConfiguration();
             }
         }
